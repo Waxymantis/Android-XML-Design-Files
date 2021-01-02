@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/blurry_leg"
+
+    >
+
+
+
+
+
+    <Button
+
+        android:id="@+id/loginButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/signUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/signinbuttondesign"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+    <Button
+
+        android:id="@+id/signUpButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/translucidBackgroundMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/signupdesign"
+        android:gravity="center"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/translucidBackgroundMain"
+        android:layout_width="370dp"
+        android:layout_height="680dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/backedit"
+        android:text="x"
+        android:textColor="#fff"
+        android:textSize="24sp"
+
+        />
+
+    <TextView
+
+
+        android:id="@+id/legendTextView"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="380dp"
+        android:foregroundGravity="fill_horizontal|center|right"
+        android:gravity="center"
+        android:text="Welcome to the greenest social media on the planet."
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:typeface="sans"
+        android:fontFamily="@font/fredoka_one"
+
+        />
+
+    <ImageView
+        android:id="@+id/greenbeeLogo"
+        android:layout_width="344dp"
+        android:layout_height="360dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="371dp"
+        app:srcCompat="@drawable/greenbeelogotypenoborders" />
+
+    <EditText
+
+        android:id="@+id/EmailLogInEditText"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/passwordLogInEditText"
+        android:layout_alignEnd="@+id/translucidBackgroundMain"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textview_back"
+        android:gravity="center"
+        android:hint="E-mail"
+        android:inputType="textWebEmailAddress"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:typeface="sans" />
+
+    <EditText
+
+        android:id="@+id/passwordLogInEditText"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/loginButton"
+        android:layout_alignEnd="@+id/translucidBackgroundMain"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/textview_back"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/textViewForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/translucidBackgroundMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Forgot Password?"
+        android:textColor="@color/DODGER_BLUE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewUser"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/translucidBackgroundMain"
+        android:layout_alignBottom="@+id/translucidBackgroundMain"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="285dp"
+        app:srcCompat="@drawable/round_account_circle_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewLock"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/translucidBackgroundMain"
+        android:layout_alignBottom="@+id/textViewForgot"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="210dp"
+        app:srcCompat="@drawable/round_lock_black_24dp" />
+
+</RelativeLayout>
